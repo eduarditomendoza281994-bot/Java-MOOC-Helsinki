@@ -10,7 +10,7 @@ public class Main {
 
         while (continuar){
             try {
-                System.out.println("Da un numero de [>2]:");
+                System.out.println("Da un numero:");
                 int numero = Integer.parseInt(scanner.nextLine().trim());
 
                 if (numero%2==0) {
