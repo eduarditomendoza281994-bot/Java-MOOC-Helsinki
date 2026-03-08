@@ -11,10 +11,10 @@ public class CondicionalesIgual {
         //TERMINA EL BUCLE HASTA QUE LAS CADENAS SEAN IGUALES
         while (!acceso){
             System.out.println("Entra la primera cadena: ");
-            String primeracadena = scanner.nextLine().replace(" ","");
+            String primeracadena = scanner.nextLine().trim();
             System.out.println("Entra la segunda cadena: ");
-            String segundacadena = scanner.nextLine().replace(" ","");
-
+            String segundacadena = scanner.nextLine().trim();
+            //IGNORA SI SON MINUSCULAS O MAYUSCULAS
             if (primeracadena.equalsIgnoreCase(segundacadena)){
                 System.out.println("Igual");
                 acceso = true;
