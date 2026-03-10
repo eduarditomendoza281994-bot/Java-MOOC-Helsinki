@@ -13,9 +13,8 @@ public class CondicionalesAñoBisiesto {
                 if (anioBisiesto % 400 == 0 || (anioBisiesto % 4 == 0 && anioBisiesto % 100 != 0)){
                     System.out.println("Año Bisiesto");
                     break;//termina el bucle cuando sea bisiesto
-                } else {
-                    System.out.println("No es Bisiesto");
                 }
+                System.out.println("No es Bisiesto");
             } catch (NumberFormatException e){//atrapo el error de vacio o letras
                 System.out.println("Ingrese un numero...");
             }
